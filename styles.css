@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap');
+
+:root{
+  --nebula1:#6d28d9; --nebula2:#22d3ee; --nebula3:#a78bfa;
+  --ink:#0b1020; --glass:rgba(15,23,42,.55); --border:rgba(148,163,184,.25);
+}
+
+/* ====== Paksa background & warna dasar ke seluruh halaman book ====== */
+html, body, .quarto-container, .page-columns, main.content, .book-content {
+  background: radial-gradient(1200px 800px at 20% 10%, #111936 0%, transparent 60%),
+              radial-gradient(800px 600px at 80% 30%, #1b1f3b 0%, transparent 60%),
+              radial-gradient(1000px 800px at 50% 90%, #121222 0%, transparent 60%),
+              var(--ink) !important;
+  color:#e5e7eb !important;
+  font-family:Poppins, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Hilangkan panel putih default di konten book */
+.page-columns .content, .quarto-document-content, .content > .page-columns > * {
+  background: transparent !important;
+}
+
+/* Bintang */
+body::before{
+  content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:
+    radial-gradient(1px 1px at 20% 30%, #ffffff88 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 60% 70%, #ffffff88 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 80% 20%, #ffffffaa 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 35% 85%, #ffffffaa 50%, transparent 51%);
+  animation: stars 60s linear infinite; opacity:.9;
+}
+@keyframes stars{ 0%{transform:translateY(0)} 100%{transform:translateY(-200px)} }
+
+/* Heading glow */
+h1,h2,h3,h4{
+  font-family:"Space Grotesk", Poppins, sans-serif;
+  color:#e9d5ff !important;
+  text-shadow:0 0 8px rgba(109,40,217,.45), 0 0 15px rgba(34,211,238,.4);
+}
+.glow{
+  text-shadow:0 0 8px rgba(34,211,238,.6), 0 0 18px rgba(109,40,217,.45);
+}
+
+/* Kaca untuk callout/panel */
+.glass, .callout, .panel-tabset, .panel-input, .panel-sidebar {
+  background:var(--glass) !important;
+  border:1px solid var(--border) !important;
+  border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,.35);
+  backdrop-filter:blur(6px); padding:1.2em; margin-bottom:1.5em;
+}
+
+/* Sidebar/TOC transparan gelap */
+.sidebar, .book-sidebar{
+  background:rgba(10,15,35,.6) !important; backdrop-filter:blur(10px);
+}
+
+/* Link & tombol */
+a{ color:var(--nebula2) !important; }
+a:hover{ text-decoration:none; filter:brightness(1.1); }
+.btn, .btn-primary, .quarto-navbar .navbar-toggler{
+  background:linear-gradient(90deg, var(--nebula1), var(--nebula2)) !important;
+  border:none !important; color:#fff !important;
+  box-shadow:0 6px 20px rgba(34,211,238,.25) !important;
+}
+
+/* Kode blok */
+pre code, .sourceCode{
+  background:rgba(2,6,23,.75) !important;
+  border:1px solid var(--border) !important; border-radius:12px !important;
+}
+code{ color:#eab308 !important; }
+
+/* Footer */
+footer{
+  background:transparent !important;
+  border-top:1px dashed var(--border) !important;
+  color:#a5b4fc !important; text-align:center;
+}
+
+/* Spasi konten */
+main.content{ padding-top:1.25rem; padding-bottom:3rem; }
+
+/* ========== Paksa warna & background seluruh area buku ========== */
+html, body, .book, .book-page, .page-columns, .content, main.content, .book-content {
+  background: radial-gradient(1200px 800px at 20% 10%, #111936 0%, transparent 60%),
+              radial-gradient(800px 600px at 80% 30%, #1b1f3b 0%, transparent 60%),
+              radial-gradient(1000px 800px at 50% 90%, #121222 0%, transparent 60%),
+              #0b1020 !important;
+  color: #e5e7eb !important;
+}
+
+/* Heading glow dan teks */
+h1, h2, h3, h4, .title {
+  color: #e9d5ff !important;
+  text-shadow: 0 0 8px rgba(109,40,217,.45),
+               0 0 15px rgba(34,211,238,.4) !important;
+}
+
+/* Hilangkan panel putih Quarto Book */
+.page-columns .content, .quarto-document-content {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Sidebar transparan */
+.sidebar, .book-sidebar {
+  background: rgba(10,15,35,0.6) !important;
+  backdrop-filter: blur(10px);
+  color: #c7d2fe !important;
+}
+
+/* Tes efek kaca */
+.glass {
+  background: rgba(255,255,255,0.08) !important;
+  border: 1px solid rgba(255,255,255,0.2) !important;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 1em;
+}

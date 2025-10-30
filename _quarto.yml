@@ -3,10 +3,10 @@ project:
   output-dir: docs
 
 book:
-  title: "Armein Z. R. Langi"
-  subtitle: "Portfolio Asesmen II-2100 KIPP"
-  author: "131902360 Armein Z R Langi"
-  date: "9/15/2025"
+  title: "Tyara Penelope Lumban Gaol "
+  subtitle: "Tyara Penelope Lumban Gaol "
+  author: "18224122 Tyara Penelope Lumban Gaol "
+  date: "30/10/2025"
   chapters:
     - index.qmd
     - All_About_me/index.qmd
@@ -29,8 +29,8 @@ format:
     theme:
       - cosmo
       - brand
+    css: C:\Users\Tyara\Downloads\UTS Kominter\all-about-me\styles.css     # <— tambah ini
   pdf:
     documentclass: scrreprt
-
 
 

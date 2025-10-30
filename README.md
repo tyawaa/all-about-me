@@ -1,2 +1,3 @@
 # asesmen-2025
-repositori tugas mahasiswa
+Tugas UTS Repositori Komunikasi Interpersonal Publik 
+Tyara Penelope Lumban Gaol - 18224122 
