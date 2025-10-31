@@ -12,7 +12,7 @@ p {
 }
 </style>
 
-![growth](../images/growth.png){width=40% fig-align="center"}
+![](../images/growth.png){width=40% fig-align="center"}
 
 ## 🧩 S - Signare Strength (Kekuatan Khas)
 
