@@ -1,7 +1,5 @@
 ## UTS-5 My Personal Reviews
-Berikut cara saya melakukan review self assesment menggunakan ChatGPT  
-
-ChatGPT melakukan self-assessment UTS-1 s.d. UTS-5 langsung dari laman yang Anda berikan dan menilai memakai rubrik tugas UTS (skala 1–5 per kriteria). Rekap skor siap diunduh sebagai CSV: [Link ChatGPT](https://chatgpt.com/share/6904ae11-49a0-8011-bc47-9e02e91ca0bc).
+>> Berikut cara saya melakukan review self assesment menggunakan ChatGPT  
 
 # Hasil Self-Assessment UTS (URL: ii-2100.github.io/all-about-me)
 
