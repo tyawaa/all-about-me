@@ -1,5 +1,17 @@
-# UTS-2 My Songs for You
 
+---
+title: "UTS-2 My Song for You"
+format:
+  html:
+    toc: false
+---
+
+<style>
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+</style>
 
 
 
@@ -72,7 +84,7 @@ College life, it’s a waltz I stumble through.
 ![](../images/fancydivider.png){width=40% fig-align="center"}
 
 ## My Take On This Song 
-> Kalau kuliah adalah pasangan, mmungkin status hubungan kami berlabel dengan "it's complicated", banyak drama tetapi kita butuh dia untuk bertumbuh 
+> Kalau kuliah adalah pasangan, mungkin status hubungan kami berlabel dengan "it's complicated", banyak drama tetapi kita butuh dia untuk bertumbuh 
 
 
 Lagu **College Blues** merupakan cerminan hubungan personal saya dengan kehidupan perkuliahan itu sendiri, sebuah relasi yang kadang manis, kadang melelahkan, namun selalu mengajarkan sesuatu. Dalam lagu ini, saya berbicara kepada "kuliah" seolah ia sosok yang hidup, yang menantang sekaligus menempa. Setiap lirik menggambarkan pertarungan antara keinginan untuk tenang dengan tekanan untuk terus berlari. Melalui irama blues yang santai, tapi getir, saya ingin menyampaikan bahwa kelelahan akademik bukan sekadar beban, melainkan bagian dari proses tumbuh dan menentukan ritme pribadi. Lagu ini adalah surat cinta sekaligus keluh kesah saya pada perjalanan menjadi dewasa di dunia kampus. 

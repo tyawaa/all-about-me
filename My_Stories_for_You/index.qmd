@@ -1,12 +1,45 @@
-# UTS-3 My Stories for You
+---
+title: "UTS-3 My Stories for You"
+format:
+  html:
+    toc: false
+---
 
-A story about my oldest daughter [Gaun Pemngantin Gladys](<https://azrl.wordpress.com/2020/07/18/gaun-pengantin-gladys/#comment-28004>)
+<style>
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+</style>
 
-A message to my daughter [The Child Who Learned to Walk at the Disneyland](<https://azrl.wordpress.com/2021/10/06/the-child-who-learned-to-walk-at-the-disneyland/>)
 
-A story for my students [Fly Eagle Fly](<https://azrl.wordpress.com/2008/04/21/fly-my-eagle-fly/>)
+## From Pixels to People 
 
-A (true) story for my teachers [Sang Mahaguru, Sang Mahaputera](<https://azrl.wordpress.com/2012/11/28/perginya-sang-mahaputera-dan-mahaguru-berkemeja-putih/)
+![fishcake](../images/fishcake.jpeg){width=40% fig-align="center"}
 
-Teasing story
-{{< video https://www.youtube.com/watch?v=Dg_4PbBlBf4 >}}
+Awalnya, aku cuma ingin main game untuk bersenang-senang dan melepas stres dari kuliah daring. Waktu itu masa COVID, kampus pindah ke Zoom, tugas menumpuk, kabar di TV bikin cemas, dan hari-hari rasanya datar, seperti bangun, buka laptop, kelas, tugas, tidur. Game jadi satu-satunya ruang yang terasa "normal". 
+
+Suatu malam, lewat Discord, aku bertemu seorang cewek asal Thailand, seumuran denganku juga. Jujur, awalnya kupikir bakal bertemu, lalu berpisah (*go to our seperate ways*). Tetapi, ternyata tidak. Kami mulai dengan hal ringan, seperti rekomendasi street food (dia cerita mengenai *Thai fish cakes, mango sticky rice*, aku balas dengan nasi goreng dan seblak), cerita soal lockdown di kota masing-masing sambil memetakan kesamaan budaya. Bedanya zona waktu nyaris nggak kerasa, jadi kami sering bermain di malam yang sama, ketika dunia di luar sepi dan hanya suara keyboard yang terdengar. 
+
+Lalu topik kami makin dalam, terkait bagaimana ayahnya harus mengurangi jam kerja, bagaimana ibunya cemas setiap kali salah satu dari mereka batuk. Aku bercerita tentang rasa jenuh kuliah daring, tentang takut gagal, dan tentang "keringnya" hari-hari tanpa tatap muka. Kadang kami hanya saling diam di Discord, sibuk dengan tugas sekolah masing-masing. 
+
+> *"People say online friends aren't real. But this year, you're the most real part of my day."*  
+
+Kalimat itu menancap. Di tengah pandemi, ketika jarak fisik adalah bentuk kasih sayang, ternyata kedekatan emosional bisa tumbuh dari layar.  
+
+Tentu tidak semuanya mulus. Pernah seminggu ia menghilang karena keluarganya terpapar. Setelah COVID mereda pun, ada masa sebulan ia tak sempat membalas karena sedang menjalani ujian-ujian. Saat kami sama-sama luang, kami *join call*, bermain lagi, dan saling bertukar kabar seperti menambal jeda yang hilang.  
+
+Lalu fase baru datang. Jalanan kembali ramai, kalender padat lagi. Di situ konfliknya muncul, bukan pertengkaran, melainkan jarak yang tumbuh secara diam-diam.  
+
+> *"I have classes evening"*  
+> *"Maybe weekend?"*  
+
+Weekend datang. Ada rapat, deadline, tugas. Balasan bergeser dari jam ke hari, hari ke minggu. Kadang hanya emoji, kadang *"sorry, just saw this"*, dan aku belajar hal yang sebelumnya tak kupahami: setiap orang punya perjuangannya sendiri, dan dari jauh kita tidak selalu bisa menolong—hanya bisa hadir sebisanya.  
+
+Aku sempat kecewa pada keadaan, tapi pelan-pelan menerima. Dia mengejar hidupnya, aku mengejar hidupku. Yang kami bisa jaga adalah cara hadir yang mungkin.  
+
+> *"I can't promise time, but I can promise I'll answer. Maybe late."*  
+
+Sejak itu, kami membangun ulang kedekatan, seperti menit-menit singkat di antara jadwal, *"good luck"*, foto *memes*, ataupun stiker ketika mata terlalu lelah untuk bercerita. Kedewasaan, rupanya, adalah menerima bahwa kita tak bisa menyelesaikan luka orang lain, hanya memastikan mereka tak sendirian saat menatap gelap.  
+
+Dari pengalaman ini, aku paham bahwa koneksi manusia tidak selalu butuh tatap muka. Di tahun ketika jalanan sepi dan kampus gelap, kami menemukan jalan lain untuk hadir—melalui *ping* kecil notifikasi, tawa yang pecah karena *lag*, atau ucapan sederhana *"have a nice day"* sebelum *log off*. Hal-hal kecil itu menambal kebocoran hariku.  

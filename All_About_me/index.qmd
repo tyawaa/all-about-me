@@ -1,6 +1,17 @@
-# UTS-1 All About Me
 
+---
+title: "UTS-1 All About Me"
+format:
+  html:
+    toc: false
+---
 
+<style>
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+</style>
 ## Introduction About Myself 
 
 ![About Me](../images/TyaraProfile2.png){width=40%}
