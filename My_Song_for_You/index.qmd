@@ -20,10 +20,11 @@ p {
 
 ## College Blues
 
-Music Arranger, Music Composer by **me myself** using BandLab 
+### Kapan Aku Membuat Lagu Ini 
+Aku menulis dan menyusun College Blues untuk menuangkan rasa capek akan kuliah. Musiknya aku kerjakan sendiri di bandLab, , liriknya kutulis bersama Johana Lokollo, dan dia juga yang menyanyikannya.
 
+Music Editor made by me 
 Lyrics made by me and Johana Lokollo 
-
 Sang by my friend, Johana Lokollo 
 
 
