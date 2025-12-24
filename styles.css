@@ -118,3 +118,31 @@ h1, h2, h3, h4, .title {
   backdrop-filter: blur(10px);
   padding: 1em;
 }
+
+/* Danger callout style — mimic red alert for "Kebutuhan Model Baru" */
+.callout-danger,
+section[id*="kebutuhan-model"] {
+  background: linear-gradient(180deg, rgba(239,68,68,0.06), rgba(239,68,68,0.02)) !important;
+  border-left: 4px solid #ef4444 !important;
+  color: #fff !important;
+  padding: 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.callout-danger h1, .callout-danger h2, .callout-danger h3,
+section[id*="kebutuhan-model"] h1, section[id*="kebutuhan-model"] h2, section[id*="kebutuhan-model"] h3 {
+  color: #fff1f2 !important;
+}
+
+/* Subtle icon treatment for callout heading */
+.callout-danger::before, section[id*="kebutuhan-model"]::before {
+  content: "\26A0"; /* warning icon */
+  display: inline-block;
+  margin-right: .5rem;
+  color: #ef4444;
+  font-weight: 700;
+}
+
+/* Ensure inner panels keep glass styling */
+.callout-danger, section[id*="kebutuhan-model"] { box-shadow: 0 8px 24px rgba(239,68,68,0.06); }
+
