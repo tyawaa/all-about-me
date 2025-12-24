@@ -25,7 +25,7 @@ ECO-SENTINEL membantu memutus pola itu dengan cara mengubah indikator lingkungan
 
 ## Cara Kerja ECO-SENTINEL 
 
-### Modul EI — Ekosistem (Ecosystem Integrity)
+### Modul EI — Ekosistem (Ecosystem Integrity) <span class="badge badge--green module-badge">EI</span>
 **Yang dicatat:**
 
 - Titik rawan deforestasi/kerusakan habitat (pemetaan lokal/citra publik),
@@ -38,7 +38,7 @@ ECO-SENTINEL membantu memutus pola itu dengan cara mengubah indikator lingkungan
 
 ---
 
-### Modul MPC — Polusi Lintas-Media (Udara/Air/Tanah/Plastik)
+### Modul MPC — Polusi Lintas-Media (Udara/Air/Tanah/Plastik) <span class="badge badge--yellow module-badge">MPC</span>
 **Udara:**
 
 - Sensor PM2.5 low-cost di lokasi strategis (sekolah/puskesmas/jalan utama),
@@ -60,7 +60,7 @@ ECO-SENTINEL membantu memutus pola itu dengan cara mengubah indikator lingkungan
 
 ---
 
-### Modul GR — Tata Kelola & Ketahanan (Governance & Resilience)
+### Modul GR — Tata Kelola & Ketahanan (Governance & Resilience) <span class="badge badge--orange module-badge">GR</span>
 Fokusnya bukan menambah data, tetapi memastikan **siapa melakukan apa** ketika status berubah:
 - pembagian peran (pemda–puskesmas–sekolah–komunitas),
 - jadwal respon,
@@ -68,7 +68,7 @@ Fokusnya bukan menambah data, tetapi memastikan **siapa melakukan apa** ketika s
 
 ---
 
-### Modul DMA — Data & Akuntabilitas
+### Modul DMA — Data & Akuntabilitas <span class="badge badge--blue module-badge">DMA</span>
 Bagian ini memastikan semua keputusan bisa ditinjau:
 - log pengukuran dan laporan lapangan,
 - dashboard tren mingguan/bulanan,
@@ -81,11 +81,16 @@ Bagian ini memastikan semua keputusan bisa ditinjau:
 
 Gagasan utamanya: status dibuat simpel supaya semua orang paham, tapi tetap ada langkah yang jelas.
 
-| Status | Kondisi umum | Fokus | Yang dilakukan warga/komunitas | Yang dilakukan instansi |
-|---|---|---|---|---|
-| **Hijau (Normal)** | indikator stabil/aman | pencegahan | edukasi ringan, pemilahan sampah, cek titik rawan | pemantauan rutin, perawatan infrastruktur |
-| **Kuning (Waspada)** | tren memburuk / sebagian titik melewati ambang | tahan sumber masalah | kerja bakti titik kebocoran, laporan terstandar + foto/lokasi | inspeksi sumber, pengangkutan ekstra, uji ulang air, imbauan sekolah/puskesmas |
-| **Merah (Darurat)** | banyak titik melewati ambang / mulai terasa dampaknya | lindungi manusia + penegakan | pembatasan aktivitas luar ruang (sekolah), dukungan masker/air aman (komunitas) | posko respon, distribusi air aman, penertiban dumping/sumber polusi, koordinasi BPBD |
+<table class="status-table">
+  <thead>
+    <tr><th>Status</th><th>Kondisi umum</th><th>Fokus</th><th>Yang dilakukan warga/komunitas</th><th>Yang dilakukan instansi</th></tr>
+  </thead>
+  <tbody>
+    <tr class="status-row-green"><td><span class="status-dot green"></span><strong>Hijau (Normal)</strong></td><td>indikator stabil/aman</td><td>pencegahan</td><td>edukasi ringan, pemilahan sampah, cek titik rawan</td><td>pemantauan rutin, perawatan infrastruktur</td></tr>
+    <tr class="status-row-yellow"><td><span class="status-dot yellow"></span><strong>Kuning (Waspada)</strong></td><td>tren memburuk / sebagian titik melewati ambang</td><td>tahan sumber masalah</td><td>kerja bakti titik kebocoran, laporan terstandar + foto/lokasi</td><td>inspeksi sumber, pengangkutan ekstra, uji ulang air, imbauan sekolah/puskesmas</td></tr>
+    <tr class="status-row-red"><td><span class="status-dot red"></span><strong>Merah (Darurat)</strong></td><td>banyak titik melewati ambang / mulai terasa dampaknya</td><td>lindungi manusia + penegakan</td><td>pembatasan aktivitas luar ruang (sekolah), dukungan masker/air aman (komunitas)</td><td>posko respon, distribusi air aman, penertiban dumping/sumber polusi, koordinasi BPBD</td></tr>
+  </tbody>
+</table>
 
 ::: {.callout-tip}
 **Catatan penting:**

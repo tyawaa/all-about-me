@@ -1,8 +1,8 @@
 ---
-title: "UAS-3 My Opinions"
+title: "UAS-2 My Opinions"
 format:
   html:
-    toc: false
+    toc: true
     number-sections: true
 ---
 
@@ -88,12 +88,12 @@ Strategi **ECO-SHIELD** mengubah pendekatan parsial menjadi pendekatan **sistemi
 
 ### Arsitektur “ECO-SHIELD”
 
-![](./fig-ecosshield-framework.svg){fig-cap="Framework ECO-SHIELD {#fig-ecosshield-framework}" width=100%} 
+![](./ecoshield-framework.jpg){fig-cap="Framework ECO-SHIELD {#fig-ecosshield-framework}" width=100%} 
 
 ### Pilar 1 — Ecosystem Integrity (EI)
 
 ::: {.callout-danger}
-## Ecosystem Integrity
+Ecosystem Integrity
 Menjaga **penopang kehidupan** (hutan, tanah, DAS, pesisir, laut) agar jasa ekosistem tetap bekerja: penyerap karbon, penyedia air, penyangga bencana, dan basis pangan.
 :::
 
@@ -128,7 +128,7 @@ Tujuan strategis pilar ini adalah menurunkan biaya pemulihan dan risiko bencana 
 ### Pilar 2 — Multi-Media Pollution Control (MPC)
 
 ::: {.callout-danger}
-## Multi-Media Pollution Control
+Multi-Media Pollution Control
 Menurunkan paparan polusi secara simultan pada **udara–air–tanah**, termasuk plastik dan bahan kimia, karena dampaknya saling berantai ke kesehatan dan ekonomi.
 :::
 
@@ -169,7 +169,7 @@ Tujuan pilar ini adalah membuat “biaya kesehatan” turun dengan menekan papar
 ### Pilar 3 — Governance & Resilience (GR)
 
 ::: {.callout-danger}
-## Governance & Resilience
+Governance & Resilience
 Membuat perubahan **terjadi dan bertahan**: mengunci kebijakan lintas-sektor, memastikan kepatuhan, melindungi kelompok rentan, dan meningkatkan kesiapsiagaan bencana.
 :::
 
@@ -205,7 +205,7 @@ Tujuan pilar ini adalah memastikan transisi yang **adil (just transition)**: per
 ### Pilar 4 — Data Monitoring & Accountability (DMA)
 
 ::: {.callout-danger}
-## Data Monitoring & Accountability
+Data Monitoring & Accountability
 Mengunci akuntabilitas: semua program harus bisa **diukur, diaudit, dan dievaluasi**, sehingga kebijakan tidak berhenti di “kegiatan”, tetapi terlihat pada perubahan indikator nyata.
 :::
 

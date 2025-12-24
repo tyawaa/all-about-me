@@ -2,7 +2,7 @@
 title: "UTS-3 My Stories for You"
 format:
   html:
-    toc: false
+    toc: true
 ---
 
 <style>

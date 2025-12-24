@@ -3,7 +3,7 @@
 title: "UTS-1 All About Me"
 format:
   html:
-    toc: false
+    toc: true
 ---
 
 <style>

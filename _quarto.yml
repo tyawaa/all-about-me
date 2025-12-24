@@ -29,7 +29,8 @@ format:
     theme:
       - cosmo
       - brand
-    css: C:\Users\Tyara\Downloads\UTS Kominter\all-about-me\styles.css     # <— tambah ini
+    css: styles.css     # use relative path (was absolute)
+    toc: true
   pdf:
     documentclass: scrreprt
 

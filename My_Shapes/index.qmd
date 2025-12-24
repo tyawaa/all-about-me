@@ -2,7 +2,7 @@
 title: "UTS-4 My SHAPE (Spiritual Gifts Heart, Abilities, Personality, Experiences)"
 format:
   html:
-    toc: false
+    toc: true
 ---
 
 <style>
