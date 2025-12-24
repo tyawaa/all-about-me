@@ -238,6 +238,121 @@ section[id*="kebutuhan-model"] > h1, section[id*="kebutuhan-model"] > h2, sectio
 
 
 /* ========================= */
+/* Animasi */
+
+/* Animasi fade in untuk konten */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animasi untuk card/panel */
+.glass, .callout, .panel-tabset, .panel-input, .panel-sidebar {
+  animation: fadeIn 0.8s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover untuk card */
+.glass:hover, .callout:hover, .panel-tabset:hover, .panel-input:hover, .panel-sidebar:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4) !important;
+}
+
+/* Animasi untuk heading */
+h1, h2, h3, h4 {
+  position: relative;
+  display: inline-block;
+  animation: glowPulse 3s infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% { text-shadow: 0 0 8px rgba(79,182,169,.5), 0 0 15px rgba(63,176,198,.4); }
+  100% { text-shadow: 0 0 15px rgba(34,211,238,.7), 0 0 25px rgba(109,40,217,.6); }
+}
+
+/* Animasi untuk tombol */
+.btn, button {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover, button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.btn:active, button:active {
+  transform: translateY(0);
+}
+
+/* Animasi untuk gambar */
+img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 8px;
+}
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Animasi floating untuk elemen penting */
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Animasi untuk daftar */
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  animation: slideIn 0.5s ease-out forwards;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Menambahkan delay untuk setiap item daftar */
+li:nth-child(1) { animation-delay: 0.1s; }
+li:nth-child(2) { animation-delay: 0.2s; }
+li:nth-child(3) { animation-delay: 0.3s; }
+li:nth-child(4) { animation-delay: 0.4s; }
+li:nth-child(5) { animation-delay: 0.5s; }
+
+/* Animasi loading */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading {
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid var(--nebula1);
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+/* ========================= */
 /* Callout header / body fixes */
 /* Override Quarto/Bootstrap default light header so callouts match dark glass theme */
 .callout.callout-style-default > .callout-header,
@@ -284,4 +399,31 @@ section[id*="kebutuhan-model"] > h1, section[id*="kebutuhan-model"] > h2, sectio
 /* Slightly soften the callout border lines to match glass */
 .callout { border:1px solid rgba(255,255,255,0.04) !important; }
 
+/* ===================== Animations (accessible + subtle) ===================== */
+/* Base classes for animate-on-scroll */
+.animate { opacity: 0; transform: translateY(6px) scale(.995); transition: opacity .48s cubic-bezier(.2,.9,.3,1) var(--reveal-delay, 0s), transform .48s cubic-bezier(.2,.9,.3,1) var(--reveal-delay, 0s); will-change: transform, opacity; }
+.animate.in-view { opacity: 1; transform: translateY(0) scale(1); }
+
+/* Title and headings — slight pop + letter tracking */
+.quarto-title-block .title.animate { transform: translateY(6px) scale(.996); letter-spacing: .6px; }
+.quarto-title-block .title.animate.in-view { transform: translateY(0) scale(1); letter-spacing: .2px; }
+
+/* Images — subtle scale-up on reveal */
+.quarto-figure.animate img { transform-origin: center; transition: transform .6s cubic-bezier(.2,.9,.3,1) var(--reveal-delay, 0s), opacity .5s var(--reveal-delay, 0s); }
+.quarto-figure.animate.in-view img { transform: scale(1.02); opacity: 1; }
+
+/* Callouts — fade + slight slide */
+.callout.animate { transform: translateX(-8px); }
+.callout.animate.in-view { transform: translateX(0); }
+
+/* Link hover underline flourish */
+a { transition: color .18s ease; }
+a::after { content: ''; display: inline-block; height: 2px; background: var(--nebula2); width: 0; margin-left:.6rem; transition: width .22s cubic-bezier(.2,.9,.2,1); vertical-align: middle; }
+a:hover::after { width: .9rem; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate, .animate.in-view { transition: none !important; transform: none !important; opacity: 1 !important; }
+  a::after { transition: none !important; }
+}
 

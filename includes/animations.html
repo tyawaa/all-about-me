@@ -1,0 +1,50 @@
+<script>
+(function(){
+  // Respect users who prefer reduced motion
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function addClass(el, cls){ el.classList.add(cls); }
+  function setInView(el){ el.classList.add('in-view'); }
+
+  // Elements we want to animate on reveal
+  const selectors = [
+    'main.content .level2',
+    'main.content .level3',
+    '.quarto-title',
+    '.quarto-figure img',
+    '.callout',
+    '.quarto-figure',
+    '.quarto-title-block .title'
+  ];
+  const targets = document.querySelectorAll(selectors.join(', '));
+
+  // If reduce motion, mark everything visible immediately
+  if (reduce) {
+    targets.forEach(e=> setInView(e));
+    document.body.classList.add('page-loaded');
+    return;
+  }
+
+  // Set initial "animate" class so CSS can set the start state
+  targets.forEach((el, i)=>{
+    el.classList.add('animate');
+    // stagger by index for natural effect
+    el.style.setProperty('--reveal-delay', (i%6)*0.06 + 's');
+  });
+
+  // IntersectionObserver to toggle in-view when element enters
+  const io = new IntersectionObserver((entries, obs)=>{
+    entries.forEach(entry=>{
+      if (entry.isIntersecting){
+        entry.target.classList.add('in-view');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.12, rootMargin: '0px 0px -10% 0px'});
+
+  targets.forEach(el=> io.observe(el));
+
+  // Page-level entrance helper
+  window.addEventListener('load', ()=> document.body.classList.add('page-loaded'));
+})();
+</script>
