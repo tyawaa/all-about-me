@@ -1,0 +1,48 @@
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease;
+  transition-property: transform, background-color, width, height;
+  mix-blend-mode: difference;
+}
+
+.cursor-follower {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  mix-blend-mode: difference;
+}
+
+.cursor.hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cursor.click {
+  transform: translate(-50%, -50%) scale(0.8);
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* Efek saat mengarahkan ke link */
+a, button, .interactive {
+  cursor: none !important;
+}
+
+a:hover ~ .cursor,
+button:hover ~ .cursor,
+.interactive:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(1.8);
+  background-color: rgba(0, 255, 255, 0.5);
+}
