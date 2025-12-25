@@ -48,3 +48,81 @@
   window.addEventListener('load', ()=> document.body.classList.add('page-loaded'));
 })();
 </script>
+
+<!-- Custom cursor (halo + trailing dot + click ripple) -->
+<script>
+(function(){
+  // Respect reduced-motion and only enable for fine pointers
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!window.matchMedia('(pointer: fine)').matches) return;
+
+  // Create cursor elements
+  const cursorWrap = document.createElement('div'); cursorWrap.id = 'custom-cursor';
+  const dot = document.createElement('div'); dot.className = 'cursor-dot';
+  const ring = document.createElement('div'); ring.className = 'cursor-ring';
+  cursorWrap.appendChild(ring); cursorWrap.appendChild(dot);
+  document.body.appendChild(cursorWrap);
+
+  // Enable class on body
+  document.body.classList.add('has-custom-cursor');
+  cursorWrap.style.display = 'block';
+
+  let mouseX = window.innerWidth/2, mouseY = window.innerHeight/2;
+  let ringX = mouseX, ringY = mouseY;
+  let dotX = mouseX, dotY = mouseY;
+  let targetX = mouseX, targetY = mouseY;
+
+  // Lerp helper
+  function lerp(a, b, n){ return (1 - n) * a + n * b; }
+
+  // Track mouse
+  window.addEventListener('mousemove', (e)=>{
+    targetX = e.clientX; targetY = e.clientY;
+    // show when mouse moves
+    cursorWrap.style.display = 'block';
+  }, {passive:true});
+
+  // Hide cursor when leaving window (optional)
+  window.addEventListener('mouseleave', ()=>{ cursorWrap.style.display = 'none'; });
+  window.addEventListener('mouseenter', ()=>{ cursorWrap.style.display = 'block'; });
+
+  // Hide custom cursor when focusing input fields (so system cursor appears for typing)
+  const interactiveSelectors = 'input, textarea, select, [contenteditable], button, a, label';
+  document.querySelectorAll(interactiveSelectors).forEach(el => {
+    el.addEventListener('mouseenter', ()=> document.body.classList.add('hide-custom-cursor'));
+    el.addEventListener('mouseleave', ()=> document.body.classList.remove('hide-custom-cursor'));
+    el.addEventListener('focus', ()=> document.body.classList.add('hide-custom-cursor'));
+    el.addEventListener('blur', ()=> document.body.classList.remove('hide-custom-cursor'));
+  });
+
+  // Click ripple
+  window.addEventListener('mousedown', (e)=>{
+    const ripple = document.createElement('div'); ripple.className = 'cursor-ripple';
+    ripple.style.left = e.clientX + 'px'; ripple.style.top = e.clientY + 'px';
+    ripple.style.width = '12px'; ripple.style.height = '12px';
+    document.body.appendChild(ripple);
+    // Force reflow then expand
+    requestAnimationFrame(()=>{
+      ripple.style.transform = 'translate(-50%, -50%) scale(24)';
+      ripple.style.opacity = '0';
+    });
+    // Remove after animation
+    setTimeout(()=> ripple.remove(), 650);
+  }, {passive:true});
+
+  // Animation loop
+  function animate(){
+    // dot follows immediately (fast lerp)
+    dotX = lerp(dotX, targetX, 0.45); dotY = lerp(dotY, targetY, 0.45);
+    dot.style.transform = `translate(${dotX}px, ${dotY}px) translate(-50%, -50%)`;
+
+    // ring lags more (slower lerp)
+    ringX = lerp(ringX, targetX, 0.12); ringY = lerp(ringY, targetY, 0.12);
+    ring.style.transform = `translate(${ringX}px, ${ringY}px) translate(-50%, -50%)`;
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+})();
+</script>

@@ -31,6 +31,8 @@ format:
       - brand
     css: styles.css     # use relative path (was absolute)
     toc: true
+    includes:
+      after-body: includes/animations.html
   pdf:
     documentclass: scrreprt
 

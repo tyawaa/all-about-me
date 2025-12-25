@@ -399,6 +399,48 @@ li:nth-child(5) { animation-delay: 0.5s; }
 /* Slightly soften the callout border lines to match glass */
 .callout { border:1px solid rgba(255,255,255,0.04) !important; }
 
+/* ========================= */
+/* Custom cursor (halo + dot + click ripple) */
+
+/* Only enable on fine pointers and when user doesn't prefer reduced motion */
+@media (pointer: fine) {
+  @media (prefers-reduced-motion: no-preference) {
+
+    /* Add a body class `.has-custom-cursor` when JS enables the custom cursor
+       System cursor will remain visible for form controls and interactive elements */
+    body.has-custom-cursor, body.has-custom-cursor * { cursor: none !important; }
+    body.has-custom-cursor input, body.has-custom-cursor textarea, body.has-custom-cursor select, body.has-custom-cursor [contenteditable],
+    body.has-custom-cursor a, body.has-custom-cursor button { cursor: auto !important; }
+
+    /* Cursor container */
+    #custom-cursor { position: fixed; left:0; top:0; width:0; height:0; pointer-events: none; z-index: 99999; display: none; mix-blend-mode: screen; }
+
+    /* Small dot that sits at pointer (solid) */
+    #custom-cursor .cursor-dot {
+      width: 10px; height: 10px; border-radius: 50%; background: var(--nebula2); box-shadow: 0 6px 18px rgba(63,176,198,0.22); transform: translate(-50%, -50%); position: absolute; will-change: transform; transition: transform .12s ease-out, opacity .12s ease;
+    }
+
+    /* Subtle halo ring that lags behind */
+    #custom-cursor .cursor-ring {
+      width: 36px; height: 36px; border-radius: 50%; border: 2px solid rgba(159,182,240,0.18); position: absolute; transform: translate(-50%, -50%) scale(1); will-change: transform, opacity; transition: transform .18s cubic-bezier(.2,.9,.3,1), opacity .18s ease;
+      background: radial-gradient(circle at 35% 30%, rgba(79,182,169,0.08), transparent 30%);
+    }
+
+    /* Click ripple animation */
+    .cursor-ripple {
+      position: fixed; border-radius: 50%; pointer-events: none; z-index: 99998; opacity: 0.9;
+      width: 14px; height: 14px; background: rgba(79,182,169,0.14); transform: translate(-50%, -50%) scale(1);
+      transition: transform .6s cubic-bezier(.2,.8,.2,1), opacity .6s ease;
+      will-change: transform, opacity;
+    }
+
+    /* Hidden state used when entering form elements */
+    body.has-custom-cursor.hide-custom-cursor #custom-cursor { display: none; }
+
+  }
+}
+
+
 /* ===================== Animations (accessible + subtle) ===================== */
 /* Base classes for animate-on-scroll */
 .animate { opacity: 0; transform: translateY(6px) scale(.995); transition: opacity .48s cubic-bezier(.2,.9,.3,1) var(--reveal-delay, 0s), transform .48s cubic-bezier(.2,.9,.3,1) var(--reveal-delay, 0s); will-change: transform, opacity; }

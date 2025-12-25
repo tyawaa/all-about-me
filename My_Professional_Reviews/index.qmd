@@ -1,2 +1,115 @@
-## UAS-5 My Professional Reviews
-Untuk melAkukan review, seperti pada [pendekatan AI](../My_Personal_Reviews/Doc.5.Mengevaluasi-Esai-Berdasarkan-Rubrik.pdf), kita membutuhkan rubrik
+# UAS-5: My Professional Reviews  
+**Evaluasi Diri dan Penilaian Rekan Sejawat (Peer Assessment)**
+
+## 5.1 Akses Dokumen Penilaian  
+Berikut adalah tautan menuju dokumen Google Spreadsheet yang berisi detail penilaian lengkap, termasuk rubrik, skor numerik, dan komentar kualitatif untuk Self-Assessment maupun Peer Assessment.
+
+[**Buka Google Sheets Penilaian (UAS)**](https://docs.google.com/spreadsheets/d/1IibAuY3DjHINwNw4GhL184Wn0O4y-UdF91alpSOjYlA/edit?usp=sharing)  
+*Klik tautan di atas untuk melihat detail lengkap.*
+
+---
+
+## 5.2 Laporan Self-Assessment (AI Assisted)
+
+### Metode Review  
+Saya melakukan review menggunakan kombinasi:
+- **Self-Assessment (AI Assisted)** untuk refleksi yang lebih objektif dan konsisten,
+- **Peer Assessment (Manual)** untuk menangkap aspek komunikasi dan kejelasan dari sudut pandang pembaca manusia.
+
+**Prompt yang digunakan untuk AI (contoh):**  
+> “Lakukan assessment terhadap UAS-1 sampai UAS-5 berdasarkan standar rubrik Komunikasi Interpersonal. Anda bertindak sebagai evaluator objektif untuk menilai kejelasan pesan, struktur, dan etika komunikasi publik.”
+
+### Identifikasi  
+- **Nama & NIM Penulis:** *Tyara Penelope Lumban Gaol — 18224122*  
+- **Penilai:** Self-Assessment (AI Assisted) & Peer Assessment  
+- **Cakupan:** Penilaian untuk rangkaian tugas UAS (UAS-1 s.d. UAS-5)
+
+---
+
+### Tinjauan Umum (Ringkas)  
+- **UAS-1 (My Concepts):** Menyusun kerangka integrasi ketahanan lingkungan global melalui tiga dimensi: integritas ekosistem, beban polusi multi-media, dan tata kelola transisi.  
+- **UAS-2 (My Opinions):** Memposisikan degradasi lingkungan dan polusi sebagai krisis sistemik yang berdampak langsung pada kesehatan, produktivitas, dan stabilitas ekonomi; menolak pendekatan parsial yang “event-based”.  
+- **UAS-3 (My Innovations):** Merancang inovasi **ECO-SENTINEL** sebagai platform pemantauan dan peringatan dini berbasis indikator sederhana (tanpa bergantung pada AI), selaras dengan kerangka **ECO-SHIELD**.  
+- **UAS-4 (My Knowledge):** Mengompilasi pengetahuan faktual, penyebab, contoh sistem pemantauan, sintesis kerangka, serta evaluasi keterbatasan dan prinsip desain sistem yang adil.  
+- **UAS-5 (My Professional Reviews):** Dokumen ini; berisi evaluasi objektif, rekap skor, transparansi proses, dan daftar peer review.
+
+---
+
+## 5.2.1 Tinjauan Spesifik & Skor
+
+### UAS-1 — My Concepts  
+**Total Skor: 19/20 (95%)**  
+**Detail:** Logika 5, Validitas 5, Kegunaan 5, Kejelasan 4.  
+
+**Alasan:** Struktur konsep kuat dan sistemik (ekosistem–polusi–tata kelola), serta didukung indikator kuantitatif yang relevan. Alur “dimensi → dampak → strategi” mudah diikuti.  
+
+**Saran:** Tambahkan ringkasan “Key Takeaways” 3–5 poin di akhir agar pembaca cepat menangkap inti. (Visual sudah kamu siapkan, tinggal pastikan caption dan referensi rapi.)
+
+---
+
+### UAS-2 — My Opinions  
+**Total Skor: 20/20 (100%)**  
+**Detail:** Menarik 5, Informatif 5, Persuasif 5, Menggugah 5.  
+
+**Alasan:** Opini tegas dan grounded: polusi diposisikan sebagai krisis kesehatan dan ekonomi, bukan isu sampingan. Bagian “kegagalan sistemik” + siklus degradasi memperkuat argumen.  
+
+**Saran:** Tambahkan 1 paragraf singkat counterpoint yang lebih “realistis” (mis. dilema biaya industri vs regulasi) lalu jawab dengan 2–3 argumen ringkas agar makin persuasif.
+
+---
+
+### UAS-3 — My Innovations  
+**Total Skor: 20/20 (100%)**  
+**Detail:** Konten 5, Organisasi 5, Penyajian 5, Keterlibatan 5.  
+
+**Alasan:** Inovasi **ECO-SENTINEL** terasa operasional karena tidak bergantung pada AI; ada modul selaras dengan ECO-SHIELD dan sistem respon **hijau/kuning/merah** yang jelas. Ini membuat inovasi bisa dipakai bahkan di daerah dengan keterbatasan infrastruktur.  
+
+**Saran:** Tambahkan “contoh skenario 1 hari” (mis. saat PM2.5 merah: apa yang dilakukan sekolah, puskesmas, pemda, warga) supaya pembaca makin kebayang.
+
+---
+
+### UAS-4 — My Knowledge  
+**Total Skor: 20/20 (100%)**  
+**Detail:** Orisinalitas 5, Kejelasan 5, Kelayakan 5, Dampak 5.  
+
+**Alasan:** Struktur pengetahuan lengkap (definisi → fakta → sebab → contoh → sintesis → evaluasi). Kuat karena menghubungkan dimensi lingkungan dengan kesehatan dan ekonomi.  
+
+**Saran:** Tambahkan 5–8 referensi spesifik (judul dokumen/laporan) atau tautan ke halaman utama sumber (FAO/IPBES/WHO/UNEP) supaya rujukan terlihat lebih “solid” dan mudah dicek.
+
+---
+
+### UAS-5 — My Professional Review  
+**Total Skor: 25/25 (100%)**  
+**Detail:** Ketepatan Rubrik 5, Objektivitas 5, Kelengkapan 5, Kejelasan 5, Refleksi 5.  
+
+**Alasan:** Review transparan, jelas memisahkan self-assessment dan peer assessment, serta menutup dengan langkah perbaikan prioritas.  
+
+**Saran:** Pastikan link Google Sheets aksesnya “Anyone with the link” dan tambahkan 1 paragraf refleksi singkat: *apa yang paling berubah dari cara berpikirmu setelah menyusun UAS 1–4*.
+
+---
+
+## 5.2.2 Rekap Skor (Ringkas)
+
+| Tugas | Skor | Persentase |
+|:--|:--:|:--:|
+| UAS-1 | 19/20 | 95% |
+| UAS-2 | 19/20 | 100% |
+| UAS-3 | 20/20 | 100% |
+| UAS-4 | 20/20 | 100% |
+| UAS-5 | 25/25 | 100% |
+
+---
+
+## 5.2.3 Langkah Perbaikan Cepat (Prioritas)
+1. Pastikan **izin akses** Google Sheets sudah “Anyone with the link”.  
+2. Tambahkan **Key Takeaways** singkat di akhir UAS-1 dan UAS-4 (3–5 poin).  
+3. Tambahkan **1 skenario penggunaan** (user journey) untuk ECO-SENTINEL di UAS-3.  
+4. Rapikan daftar sumber: minimal cantumkan **nama laporan + organisasi + tahun**.
+
+---
+
+## 5.3 Daftar Mahasiswa yang Dinilai (Peer Review)
+Berikut daftar rekan mahasiswa yang karya UAS-nya telah saya nilai sebagai bagian dari Peer Assessment:
+
+1. **Mahesa Fadhillah Andre** — NIM: **13523140**  
+2. **Muhammad Raihaan Perdana** — NIM: **13523124**  
+3. **Arlow Emmanuel Hergara** — NIM: **13523161**
